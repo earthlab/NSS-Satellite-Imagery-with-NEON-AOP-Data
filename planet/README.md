@@ -1,6 +1,8 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3484160.svg)](https://doi.org/10.5281/zenodo.3484160)
+
 # Planet Notebook for Neon Science Summit 2019
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3484160.svg)](https://doi.org/10.5281/zenodo.3484160)
+You can run this notebook in a pre-built Jupyter container using either Binder or CoLab. 
 
 Launch [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/samapriya/neon-science-summit-2019/master)
 
@@ -23,6 +25,13 @@ Note you may need to mount the location of your NEON Data when you start the con
 ```
 -v ~/NEON_Downloads:/NEON_Downloads
 ```
+
+Pull the repo from here or Sam's Github pages
+
+```
+git clone https://github.com/samapriya/neon-science-summit-2019
+```
+
 
 # Run Jupyter Lab in CyVerse 
 
