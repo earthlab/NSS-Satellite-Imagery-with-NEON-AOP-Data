@@ -3,7 +3,9 @@
 
 # NSS-Satellite-Imagery-with-NEON-AOP-Data
 
-Tuesday PM
+Tuesday AM - Fill out a form for access to [Planet Education and Research Account](https://forms.gle/qWhabjrKKNY6w8tH8). If you go through the standard process it may not be approved in time for the afternoon session. 
+
+Tuesday PM - Hands On with Planet and NEON data.
 
 Clone this repository - there are example .ipynb notebooks for you to work with during the breakout sessions
 
