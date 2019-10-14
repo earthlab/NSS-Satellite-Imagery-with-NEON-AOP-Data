@@ -3,9 +3,9 @@
 
 # NSS-Satellite-Imagery-with-NEON-AOP-Data
 
-Tuesday AM
+Tuesday PM
 
-Clone this repository - there are example .ipynb notebooks for you to work with during the breakout session
+Clone this repository - there are example .ipynb notebooks for you to work with during the breakout sessions
 
 ```
 git clone https://github.com/earthlab/NSS-Satellite-Imagery-with-NEON-AOP-Data
