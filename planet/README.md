@@ -23,11 +23,11 @@ Note you may need to mount the location of your NEON Data when you start the con
 -v ~/NEON_Downloads:/NEON_Downloads
 ```
 
-# Launch in CyVerse
+## Launch in CyVerse
 
-CyVerse hosts a data science workbench called the Discovery Environment. You can launch visual and interactive compute environments (VICE) containers from the DE. 
+CyVerse hosts a data science workbench called the Discovery Environment. 
 
-Steps:
+#### Steps:
 
 (1) Register for CyVerse https://user.cyverse.org/
 
