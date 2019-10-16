@@ -5,3 +5,6 @@ rasterio
 fiona
 matplotlib
 humanize
+geopandas
+shapely
+
