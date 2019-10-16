@@ -1,0 +1,49 @@
+name: geo_py
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.7    # Python version 3.7
+    - basemap       # mapping package
+    - bottleneck    # C-optimized array functions for NumPy
+    - cartopy       # Geographic plotting toolkit
+    - cython        # Transpile Python->C
+    - dask          # Parallel processing library
+    - h5py          # Wrapper for HDF5
+    - ipython       # IPython interpreter and tools
+    - jupyter       # Jupyter federation architecture
+    - jupyterlab    # Jupyter Lab environment
+    - matplotlib    # 2D plotting library
+    - netcdf4       # Wrapper for netcdf4
+    - numpy         # N-d array and numerics
+    - pandas        # Labeled array library
+    - proj4         # geographic projections
+    - pyresample    # Geographic resampling tools
+    - rasterio      # open raster data
+    - geopandas     # pandas access to geospatial data
+    - scipy         # Common math/stats/science functions
+    - scikit-learn  # Macine learning library
+    - scikit-image  # Image processing routines
+    - statsmodels   # Regression/modeling toolkit
+    - seaborn       # Statistical visualizations
+    - tqdm          # Nice progress bar for longer computations
+    - xarray        # N-d labeled array library
+    - zarr          # Array storage library
+    - numcodecs     # Compression library used by zarr
+    - gcsfs         # Access data from Google Cloud Storage
+    - s3fs          # Access data from Amazon S3
+    #- xshape        # Tools for working with shapefiles, topographies, and polygons in xarray
+    #- xesmf         # Universal Regridder for Geospatial Data
+    - regionmask    # plotting and creation of masks of spatial regions
+    - xarray-topo   # xarray extension for topographic analysis and modelling
+    - xarray-simlab # framework for easily building custom computational models from a set of modular components
+    - satpy         # reading and manipulating meteorological remote sensing data and writing it to various image and data file formats
+    - earthpy
+    - descartes
+    - pysal
+    - contextily
+    - spectral
+    
+    - pip
+    - pip:
+        - xshape
