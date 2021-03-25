@@ -20,6 +20,8 @@ simul_l8_nir = nis_hs_cube[nir_bands] * nir_weights / nir_weights.sum()
 
 ```
 
+
+Clone the repository
 ```
 git clone https://github.com/earthlab/NSS-Satellite-Imagery-with-NEON-AOP-Data
 ```
