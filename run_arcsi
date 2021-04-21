@@ -1,0 +1,19 @@
+#!/bin/bash
+# script to activate arcsi env and convert scenes.
+# can be run as is assuming all data present, but more informative
+
+conda activate arcsi
+
+arcsi.py -s ls7 -p CLOUDS DOSAOTSGL STDSREF METADATA -o ./OutputsL7/ --stats --format KEA --tmpath ./tmp --dem ./neon_usgs_dem.tif --keepfileends stdsref.kea clouds.kea meta.json sat.kea toposhad.kea valid.kea -i ./LE07_L1TP_034032_20200912_20201008_02_T1/LE07_L1TP_034032_20200912_20201008_02_T1_MTL.txt
+cd OutputsL7
+gdal_translate LS7_20200912_lat40lon10589_r32p34_msk_vmsk_mclds_topshad_rad_srefdem_stdsref.kea LS7_20200912_lat40lon10589_r32p34_msk_vmsk_mclds_topshad_rad_srefdem_stdsref.tif
+cd ..
+
+arcsi.py -s ls8 -p CLOUDS DOSAOTSGL STDSREF METADATA -o ./OutputsL8/ --stats --format KEA --tmpath ./tmp --dem ./neon_usgs_dem.tif --keepfileends stdsref.kea clouds.kea meta.json sat.kea toposhad.kea valid.kea -i ./LC08_L1TP_033032_20200913_20200919_02_T1/LC08_L1TP_033032_20200913_20200919_02_T1_MTL.txt
+cd OutputsL8
+gdal_translate LS8_20200913_lat40lon10423_r32p33_vmsk_mclds_topshad_rad_srefdem_stdsref.kea LS8_20200913_lat40lon10423_r32p33_vmsk_mclds_topshad_rad_srefdem_stdsref.tif
+cd ..
+
+arcsi.py -s sen2 -f KEA --stats -p DOSAOTSGL SREF METADATA -o ./OutputsSen2_10m --dem ./neon_usgs_dem.tif --tmpath ./tmp -i ./S2B_MSIL1C_20200915T173909_N0209_R098_T13TEF_20200915T211251.SAFE/MTD_MSIL1C.xml
+cd OutputsSen2_10m
+gdal_translate SEN2_20200915_lat41lon10435_T13TEF_ORB098_utm13n_vmsk_rad_srefdem.kea SEN2_20200915_lat41lon10435_T13TEF_ORB098_utm13n_vmsk_rad_srefdem.tif
